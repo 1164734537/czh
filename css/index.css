@@ -30,7 +30,7 @@ nav > ul > li a{
 	float: left;
 }
 /*鼠标滑过*/
-.nav_list_left li:hover a{
+.nav_list_left li:hover a,.nav_list_right li:hover a{
 	color: #fff;
 }
 
