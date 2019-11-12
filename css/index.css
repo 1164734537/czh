@@ -1,8 +1,52 @@
 /*header部分开始*/
-nav{
+
+/*公共样式*/
+header{
+}
+.head_container{
+	width: 100%;
+	margin: 0 auto;
 	background: #333;
+}
+nav{
+	width: 1226px;
+	/*background: pink;*/
+	margin: 0 auto;
+	line-height: 40px;
 	font-size: 12px;
 	height: 40px;
 	color: #b0b0b0;
 }
-/*header部分结束*/
+nav > ul > li a{
+	color: #b0b0b0;
+}
+.nav_list_left{
+	float: left;
+}
+.nav_list_right{
+	float: right;
+}
+.nav_list_left li,.nav_list_right li{
+	float: left;
+}
+/*鼠标滑过*/
+.nav_list_left li:hover a{
+	color: #fff;
+}
+
+/*左列表*/
+.nav_list_left li{
+	/*margin: 0 .3em;*/
+	position: relative;
+}
+.nav_list_left li:not(.nav_list_left_last):after{
+	content: "|";
+	display:inline;
+	color: #424242;
+	/*padding: 0 .3em;*/
+	margin: 0 .3em;
+}
+
+
+
+/*header部分结束
