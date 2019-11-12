@@ -10,7 +10,6 @@ header{
 }
 nav{
 	width: 1226px;
-	/*background: pink;*/
 	margin: 0 auto;
 	line-height: 40px;
 	font-size: 12px;
@@ -34,19 +33,62 @@ nav > ul > li a{
 	color: #fff;
 }
 
+/*各自样式*/
 /*左列表*/
 .nav_list_left li{
-	/*margin: 0 .3em;*/
 	position: relative;
 }
 .nav_list_left li:not(.nav_list_left_last):after{
 	content: "|";
 	display:inline;
 	color: #424242;
-	/*padding: 0 .3em;*/
 	margin: 0 .3em;
 }
+.app{
+	position: relative;
+}
+.appcode{
+	position: absolute;
+	left: -64%;
+	width: 124px;
+	height: 0px;
+	overflow: hidden;
+	/*background: red;*/
+	box-shadow: 0 1px 5px #aaa;
+	font-size: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: height .3s;
+}
+.appcode img{
+	display: block;
+}
+.appcode span{
+	/*background: blue;*/
+	font-size: 14px;
+	color: #000;
+}
+.app .doc{
+	position:absolute;
+	display: none;
+	top: 27px;
+	left: 28%;
+/*	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;*/
+	/*border-bottom: 5px solid red;*/
+	border-top: 5px solid transparent;
+	border-left: 8px solid transparent;
+	border-right:8px solid transparent;
+	border-bottom: 8px solid #fff;
+}
 
-
-
+.nav_list_left li:hover .appcode{
+	height: 148px;
+}
+.nav_list_left li:hover .doc{
+	display: block;
+}
 /*header部分结束
