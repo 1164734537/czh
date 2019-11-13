@@ -42,7 +42,7 @@ nav > ul > li a{
 	content: "|";
 	display:inline;
 	color: #424242;
-	margin: 0 .3em;
+	margin: 0 .5em;
 }
 .app{
 	position: relative;
@@ -53,7 +53,6 @@ nav > ul > li a{
 	width: 124px;
 	height: 0px;
 	overflow: hidden;
-	/*background: red;*/
 	box-shadow: 0 1px 5px #aaa;
 	font-size: 0;
 	display: flex;
@@ -61,24 +60,22 @@ nav > ul > li a{
 	align-items: center;
 	justify-content: center;
 	transition: height .3s;
+	cursor: pointer;
 }
 .appcode img{
 	display: block;
 }
 .appcode span{
-	/*background: blue;*/
 	font-size: 14px;
+	line-height: 14px;
 	color: #000;
+	margin-top: 10px;
 }
 .app .doc{
 	position:absolute;
 	display: none;
 	top: 27px;
 	left: 28%;
-/*	border-top: transparent;
-	border-left: transparent;
-	border-right: transparent;*/
-	/*border-bottom: 5px solid red;*/
 	border-top: 5px solid transparent;
 	border-left: 8px solid transparent;
 	border-right:8px solid transparent;
@@ -90,5 +87,51 @@ nav > ul > li a{
 }
 .nav_list_left li:hover .doc{
 	display: block;
+}
+
+/*右列表*/
+.login:after,.login+li:after{
+	content: "|";
+	display:inline;
+	color: #424242;
+	/*color: red;*/
+	margin: 0 .5em;
+}
+.shop_car{
+	margin-left: 1.4em;
+	width: 120px;
+	height: 40px;
+	background: #424242;
+	text-align: center;
+	position: relative;
+}
+.shop_car:hover{
+	background: #fff;
+}
+.shop_car:hover .shop_list{
+	height: 100px;
+}
+.shop_car:hover i,.shop_car:hover a>span{
+	color: #ff6700;
+}
+/*购物车仓库*/
+.shop_list{
+	width: 316px;
+	/*height: 100px;*/
+	height: 0px;
+	background: #fff;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 1px 5px #aaa;
+	overflow: hidden;
+	transition: height .3s;
+
+}
+.shop_list span{
+	color: #000;
 }
 /*header部分结束
