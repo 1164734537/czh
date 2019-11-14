@@ -16,6 +16,8 @@
 	<link rel="icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
 	<!-- 引入字体图标库 -->
 	<link rel="stylesheet" href="./css/iconfont/iconfont.css">
+	<!-- 引入jquery  3.4.1-->
+	<link rel="stylesheet" href="./js/jquery.js">
 
 </head>
 <body>
@@ -60,7 +62,14 @@
 								<span>(0)</span>
 							</a>
 							<div class="shop_list">
-								<span>购物车中还没有商品，赶紧选购吧！</span>
+								<div class="loader">
+									<div class="loading">
+										<i></i>
+										<i></i>
+										<i></i>
+									</div>
+								</div>
+								<span class="shop_talk">购物车中还没有商品，赶紧选购吧！</span>
 							</div>
 						</li>
 					</ul>
@@ -70,7 +79,8 @@
 			</div>
 		</header>
 		<!-- 主体部分 -->
-		<div></div>
+		<div>
+		</div>
 		<!-- 页脚部分 -->
 		<footer></footer>
 	</div>
