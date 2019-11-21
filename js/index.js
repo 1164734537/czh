@@ -59,24 +59,24 @@ $(function(){
 	function enter(){
 		$('.shop_car').css('backgroundColor','#fff');
 		$('.shop_car a span').add($('.shop_car a i')).css('color','#ff6700');
-		$('.shop_list').slideDown(300)
+		$('.shop_list').css('height','100px')
 		$('.loader').fadeOut(500,function(){
 			$('.shop_talk').fadeIn(300)
 		})
 	}
 	// 移出触发的函数
 	function leave(){
-		$('.shop_list').slideUp(300,function(){
-			$('.shop_car').css('backgroundColor','#424242');
+		$('.shop_car').css('backgroundColor','#424242');
 			$('.shop_car a span').add($('.shop_car a i')).css('color','#b0b0b0');
+			$('.shop_list').css('height','0px');
 			$('.shop_talk').hide()
-			$('.loader').show()
-		})
+			$('.loader').fadeIn('slow')
 	}
 
-	// 函数调用及使用防抖
+	// 函数调用
 	$('.shop_car')
-	.on('mouseenter',debounce_merge(enter,200,true))
-	.on('mouseleave',debounce_merge(leave,300,false))
+	.on('mouseenter',enter)
+	.on('mouseleave',leave)
+
 
 })
