@@ -1,5 +1,7 @@
 /*header部分开始*/
 
+
+/*header 上部分开始*/
 /*公共样式*/
 header{
 }
@@ -7,6 +9,8 @@ header{
 	width: 100%;
 	margin: 0 auto;
 	background: #333;
+	position: relative;
+	z-index: 1;
 }
 nav{
 	width: 1226px;
@@ -62,6 +66,7 @@ nav > ul > li a{
 	justify-content: center;
 	transition: height .3s;
 	cursor: pointer;
+	background: #fff;
 }
 .appcode img{
 	display: block;
@@ -103,8 +108,10 @@ nav > ul > li a{
 	width: 120px;
 	height: 40px;
 	background: #424242;
+	/*background: #fff;*/
 	text-align: center;
 	position: relative;
+
 }
 
 /*购物车仓库*/
@@ -175,5 +182,13 @@ nav > ul > li a{
 	padding-top: 40px;
 	line-height: 20px;
 	display: none;
+}
+/*header上部分结束*/
+
+/*header 下部分开始*/
+.head_bom{
+	width: 100%;
+	height: 100px;
+	background: red;
 }
 /*header部分结束

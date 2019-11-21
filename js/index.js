@@ -60,7 +60,7 @@ $(function(){
 		$('.shop_car').css('backgroundColor','#fff');
 		$('.shop_car a span').add($('.shop_car a i')).css('color','#ff6700');
 		$('.shop_list').slideDown(300)
-		$('.loader').fadeOut(800,function(){
+		$('.loader').fadeOut(500,function(){
 			$('.shop_talk').fadeIn(300)
 		})
 	}
@@ -78,8 +78,5 @@ $(function(){
 	$('.shop_car')
 	.on('mouseenter',debounce_merge(enter,200,true))
 	.on('mouseleave',debounce_merge(leave,300,false))
-
-
-
 
 })
