@@ -55,22 +55,26 @@ $(function(){
 			},wait)
 		}
 	}
-
 	// 移入触发的函数
 	function enter(){
 		$('.shop_car').css('backgroundColor','#fff');
 		$('.shop_car a span').add($('.shop_car a i')).css('color','#ff6700');
-		$('.shop_list').slideDown(200)
+		$('.shop_list').slideDown(300)
+		$('.loader').fadeOut(800,function(){
+			$('.shop_talk').fadeIn(300)
+		})
 	}
 	// 移出触发的函数
 	function leave(){
-		$('.shop_list').slideUp(200,function(){
-			$('.shop_car').css('backgroundColor','#333');
+		$('.shop_list').slideUp(300,function(){
+			$('.shop_car').css('backgroundColor','#424242');
 			$('.shop_car a span').add($('.shop_car a i')).css('color','#b0b0b0');
+			$('.shop_talk').hide()
+			$('.loader').show()
 		})
 	}
 
-
+	// 函数调用及使用防抖
 	$('.shop_car')
 	.on('mouseenter',debounce_merge(enter,200,true))
 	.on('mouseleave',debounce_merge(leave,300,false))
