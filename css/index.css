@@ -315,3 +315,29 @@ footer .foo_bom{
 	background: #ff6700;
 	color: #fff;
 }
+/*footer下部分布局结束*/
+/*site-info布局开始*/
+.site_info{
+	padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.site_container{
+
+}
+.slogan{
+	margin: 30px auto 0;
+	width: 267px;
+    height: 19px;
+    background: url(https://s02.mifile.cn/assets/static/image/slogan2016.png) no-repeat center 0;
+    display: block;
+    /*text-align: right;*/
+
+    /*利用首行缩进,隐藏文字,好处,利于seo*/
+    text-indent: -9999em;
+    overflow: hidden;
+    line-height:0;
+    font-size:0;
+   /*overflow:hidden;*/
+}
+/*site-info布局结束*/
