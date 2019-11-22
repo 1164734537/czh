@@ -202,11 +202,116 @@ nav > ul > li a{
 /*页脚*/
 .footer{
 	width: 100%;
-	background: pink;
+	/*background: pink;*/
 }
 footer{
 	width: 1226px;
 	height: 272px;
 	margin: 0 auto;
 	background: #fff;
+}
+/*footer上部分布局开始*/
+footer  .foo_top{
+	padding: 27px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+footer div ul{
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+	/*border: 1px solid red;*/
+}
+footer div li{
+	border-left: 1px solid #e0e0e0;
+	/*border: 1px solid red;*/
+	width: 19.8%;
+	text-align: center;
+	cursor: pointer;
+/*	width: 19.8%;*/
+}
+footer div li:nth-child(1){
+	border-left: 0px
+}
+footer div li a{
+	font-size: 16px;
+	line-height: 25px;
+	color: #616161;
+	transition: all .2s;
+}
+footer div li a:hover{
+	color: #ff6700;
+}
+footer div li a i{
+	margin-right: 6px;
+}
+/*footer上部分布局结束*/
+/*footer下部分布局开始*/
+footer .foo_bom{
+	padding: 40px 0;
+	/*background: yellow;*/
+	/*height: 112px;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.foo_bom .foo_about{
+	display: flex;
+	align-items: center;
+}
+.foo_bom div > dl{
+	width: 160px;
+    height: 112px;
+    margin: 0;
+}
+.foo_bom div > dl > dt{
+	margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.foo_bom div >dl dd{
+	margin: 10px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.foo_bom div >dl dd a{
+	color: #757575;
+	text-align: center;
+}
+.col_contact{
+	width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+    /*margin-left: 56px;*/
+}
+.col_contact .phone{
+	margin: 0 0 5px;
+	font-size: 22px;
+	line-height: 1;
+	color: #ff6700;
+}
+.col_contact p{
+	margin: 0 0 16px;
+    font-size: 12px;
+}
+.col_contact .btn{
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid  #ff6700;
+    background: #fff;
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    transition: all .4s;
+}
+.foo_bom div >dl dd:hover a{
+	color: #ff6700;
+}
+.col_contact .btn:hover{
+	background: #ff6700;
+	color: #fff;
 }
